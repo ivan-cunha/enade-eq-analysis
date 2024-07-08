@@ -1,0 +1,77 @@
+Table curso {
+    ano BigInt [pk]
+    codigo_do_curso BigInt [pk]
+    codigo_da_area BigInt [ref: > area.codigo_da_area]
+    grau_academico String
+    codigo_da_ies BigInt [ref: > ies.codigo_da_ies]
+    codigo_do_municipio BigInt [ref: > municipio.codigo_do_municipio]
+    modalidade_de_ensino String
+    no_de_concluintes_inscritos BigInt
+    no_de_concluintes_participantes BigInt
+    nota_bruta_fg Decimal(10,3)
+    nota_padronizada_fg Decimal(10,3)
+    nota_bruta_ce Decimal(10,3)
+    nota_padronizada_ce Decimal(10,3)
+    conceito_enade_continuo Decimal(10,3)
+    conceito_enade_faixa BigInt
+    qe_i27 Decimal(10,3)
+    qe_i28 Decimal(10,3)
+    qe_i29 Decimal(10,3)
+    qe_i30 Decimal(10,3)
+    qe_i31 Decimal(10,3)
+    qe_i32 Decimal(10,3)
+    qe_i33 Decimal(10,3)
+    qe_i34 Decimal(10,3)
+    qe_i35 Decimal(10,3)
+    qe_i36 Decimal(10,3)
+    qe_i37 Decimal(10,3)
+    qe_i38 Decimal(10,3)
+    qe_i39 Decimal(10,3)
+    qe_i40 Decimal(10,3)
+    qe_i41 Decimal(10,3)
+    qe_i42 Decimal(10,3)
+    qe_i43 Decimal(10,3)
+    qe_i44 Decimal(10,3)
+    qe_i45 Decimal(10,3)
+    qe_i46 Decimal(10,3)
+    qe_i47 Decimal(10,3)
+    qe_i48 Decimal(10,3)
+    qe_i49 Decimal(10,3)
+    qe_i50 Decimal(10,3)
+    qe_i51 Decimal(10,3)
+    qe_i52 Decimal(10,3)
+    qe_i53 Decimal(10,3)
+    qe_i54 Decimal(10,3)
+    qe_i55 Decimal(10,3)
+    qe_i56 Decimal(10,3)
+    qe_i57 Decimal(10,3)
+    qe_i58 Decimal(10,3)
+    qe_i59 Decimal(10,3)
+    qe_i60 Decimal(10,3)
+    qe_i61 Decimal(10,3)
+    qe_i62 Decimal(10,3)
+    qe_i63 Decimal(10,3)
+    qe_i64 Decimal(10,3)
+    qe_i65 Decimal(10,3)
+    qe_i66 Decimal(10,3)
+    qe_i67 Decimal(10,3)
+    qe_i68 Decimal(10,3)
+}
+
+Table ies {
+    codigo_da_ies BigInt [pk]
+    name_da_ies String [note: '255']
+    sigla_da_ies String [note: '10']
+    organizacao_academica String [note: '150']
+    categoria_administrativa String [note: '150']
+}
+
+Table area {
+    codigo_da_area BigInt [pk]
+    area_de_avaliacao String [note: '150']
+}
+
+Table municipio {
+    codigo_do_municipio BigInt [pk]
+    municipio String [note: '255']
+}

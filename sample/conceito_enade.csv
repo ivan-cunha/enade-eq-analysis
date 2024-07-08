@@ -1,0 +1,25 @@
+Ano;Código da Área;Área de Avaliação;Grau Acadêmico;Código da IES;Nome da IES*;Sigla da IES*;Organização Acadêmica;Categoria Administrativa;Código do Curso;Modalidade de Ensino;Código do Município**;Município do Curso**;Sigla da UF** ;Nº de Concluintes Inscritos;Nº  de Concluintes Participantes;Nota Bruta - FG;Nota Padronizada - FG;Nota Bruta - CE;Nota Padronizada - CE;Conceito Enade (Contínuo);Conceito Enade (Faixa);Observação
+2022;2;DIREITO;Bacharelado;1;UNIVERSIDADE FEDERAL DE MATO GROSSO;UFMT;Universidade;Pública Federal;1;Educação Presencial;5103403;Cuiabá;MT;91;46;76,33;4,686;59,004;4,823;4,788;5;
+2022;13;CIÊNCIAS ECONÔMICAS;Bacharelado;1;UNIVERSIDADE FEDERAL DE MATO GROSSO;UFMT;Universidade;Pública Federal;2;Educação Presencial;5103403;Cuiabá;MT;36;29;60,872;2,282;31,11;1,603;1,772;2;
+2022;38;SERVIÇO SOCIAL;Bacharelado;1;UNIVERSIDADE FEDERAL DE MATO GROSSO;UFMT;Universidade;Pública Federal;7;Educação Presencial;5103403;Cuiabá;MT;57;46;59,419;3,163;55,754;3,508;3,421;4;
+2022;22;CIÊNCIAS CONTÁBEIS;Bacharelado;1;UNIVERSIDADE FEDERAL DE MATO GROSSO;UFMT;Universidade;Pública Federal;8;Educação Presencial;5103403;Cuiabá;MT;84;73;59,404;3,8;27,146;3,227;3,37;4;
+2022;1;ADMINISTRAÇÃO;Bacharelado;1;UNIVERSIDADE FEDERAL DE MATO GROSSO;UFMT;Universidade;Pública Federal;13;Educação Presencial;5103403;Cuiabá;MT;124;52;62,486;3,899;49,657;3,669;3,726;4;
+2022;22;CIÊNCIAS CONTÁBEIS;Bacharelado;25352;Universidade Federal de Rondonópolis;UFR;Universidade;Pública Federal;21;Educação Presencial;5107602;Rondonópolis;MT;65;36;50,369;2,724;19,108;1,401;1,731;2;
+2022;13;CIÊNCIAS ECONÔMICAS;Bacharelado;2;UNIVERSIDADE DE BRASÍLIA;UNB;Universidade;Pública Federal;122;Educação Presencial;5300108;Brasília;DF;121;106;69,319;3,411;49,576;4,668;4,353;5;
+2022;38;SERVIÇO SOCIAL;Bacharelado;2;UNIVERSIDADE DE BRASÍLIA;UNB;Universidade;Pública Federal;126;Educação Presencial;5300108;Brasília;DF;90;69;72,005;4,582;67,979;4,704;4,673;5;
+2022;81;RELAÇÕES INTERNACIONAIS;Bacharelado;2;UNIVERSIDADE DE BRASÍLIA;UNB;Universidade;Pública Federal;128;Educação Presencial;5300108;Brasília;DF;85;67;76,944;4,092;56,673;4,264;4,22;5;
+2022;1;ADMINISTRAÇÃO;Bacharelado;2;UNIVERSIDADE DE BRASÍLIA;UNB;Universidade;Pública Federal;145;Educação Presencial;5300108;Brasília;DF;250;173;67,214;4,447;59,204;4,751;4,675;5;
+2022;2;DIREITO;Bacharelado;2;UNIVERSIDADE DE BRASÍLIA;UNB;Universidade;Pública Federal;148;Educação Presencial;5300108;Brasília;DF;143;113;76,253;4,677;58,936;4,814;4,779;5;
+2022;22;CIÊNCIAS CONTÁBEIS;Bacharelado;2;UNIVERSIDADE DE BRASÍLIA;UNB;Universidade;Pública Federal;149;Educação Presencial;5300108;Brasília;DF;110;79;59,062;3,76;26,377;3,052;3,228;4;
+2022;2;DIREITO;Bacharelado;2;UNIVERSIDADE DE BRASÍLIA;UNB;Universidade;Pública Federal;165;Educação Presencial;5300108;Brasília;DF;175;125;77,58;4,829;57,711;4,652;4,696;5;
+2022;22;CIÊNCIAS CONTÁBEIS;Bacharelado;2;UNIVERSIDADE DE BRASÍLIA;UNB;Universidade;Pública Federal;167;Educação Presencial;5300108;Brasília;DF;139;91;58,789;3,727;29,594;3,783;3,769;4;
+2022;22;CIÊNCIAS CONTÁBEIS;Bacharelado;3;UNIVERSIDADE FEDERAL DE SERGIPE;UFS;Universidade;Pública Federal;306;Educação Presencial;2806701;São Cristóvão;SE;61;57;61,643;4,067;32,743;4,499;4,39;5;
+2022;2;DIREITO;Bacharelado;3;UNIVERSIDADE FEDERAL DE SERGIPE;UFS;Universidade;Pública Federal;308;Educação Presencial;2806701;São Cristóvão;SE;181;147;72,559;4,253;54,327;4,205;4,217;5;
+2022;2;DIREITO;Bacharelado;4;UNIVERSIDADE FEDERAL DO AMAZONAS;UFAM;Universidade;Pública Federal;376;Educação Presencial;1302603;Manaus;AM;167;133;71,094;4,085;53,539;4,101;4,096;5;
+2022;38;SERVIÇO SOCIAL;Bacharelado;4;UNIVERSIDADE FEDERAL DO AMAZONAS;UFAM;Universidade;Pública Federal;377;Educação Presencial;1302603;Manaus;AM;131;108;57,059;2,897;49,684;2,913;2,909;3;
+2022;13;CIÊNCIAS ECONÔMICAS;Bacharelado;4;UNIVERSIDADE FEDERAL DO AMAZONAS;UFAM;Universidade;Pública Federal;378;Educação Presencial;1302603;Manaus;AM;121;105;63,451;2,626;33,165;1,944;2,114;3;
+2022;22;CIÊNCIAS CONTÁBEIS;Bacharelado;4;UNIVERSIDADE FEDERAL DO AMAZONAS;UFAM;Universidade;Pública Federal;388;Educação Presencial;1302603;Manaus;AM;138;108;54,3;3,192;23,283;2,349;2,559;3;
+2022;1;ADMINISTRAÇÃO;Bacharelado;4;UNIVERSIDADE FEDERAL DO AMAZONAS;UFAM;Universidade;Pública Federal;392;Educação Presencial;1302603;Manaus;AM;345;266;58,677;3,456;45,174;3,16;3,234;4;
+2022;803;JORNALISMO;Bacharelado;4;UNIVERSIDADE FEDERAL DO AMAZONAS;UFAM;Universidade;Pública Federal;395;Educação Presencial;1302603;Manaus;AM;92;73;71,072;3,859;60,261;3,526;3,609;4;
+2022;22;CIÊNCIAS CONTÁBEIS;Bacharelado;5;UNIVERSIDADE FEDERAL DO PIAUÍ;UFPI;Universidade;Pública Federal;490;Educação Presencial;2211001;Teresina;PI;107;70;58,527;3,696;25,408;2,832;3,048;4;
+2022;2;DIREITO;Bacharelado;5;UNIVERSIDADE FEDERAL DO PIAUÍ;UFPI;Universidade;Pública Federal;491;Educação Presencial;2211001;Teresina;PI;120;80;75,362;4,575;57,45;4,618;4,606;5;
