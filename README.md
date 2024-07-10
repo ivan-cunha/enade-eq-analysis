@@ -73,3 +73,15 @@ This table lists city codes and names.
 ## Analysis
 
 For a detailed analysis and conclusions, refer to the [Analysis Notebook](/src/analysis.ipynb). In summary, the findings suggest that there is some validity to the professors' suspicions about students' evaluations of public versus private universities.
+
+## Conclusion
+
+### Achievements and Challenges
+
+In this project, we aimed to investigate whether there is a tendency for students to rate public universities lower than private ones, and to what extent this affects key indicators like the CPC (Preliminary Course Concept). We successfully demonstrated that there is indeed some validity to the professors' suspicion that public universities may receive lower evaluations compared to private institutions. The analysis was supported by combining Enade grades with student questionnaire data, providing a comprehensive view of students' perceptions.
+
+One of the main challenges we encountered was constructing a robust database model and developing effective queries for analysis. This process required careful design and iterative refinement to ensure the accuracy and relevance of the data used in our evaluation.
+
+### Future Work
+
+For future work, we plan to extend the analysis to include data from additional years beyond 2022 to identify trends over time. We will also focus on evaluating the CPC indicator to understand its relationship with the data collected from the student questionnaire. These steps will help to provide a more complete picture of the quality of higher education in Brazil and offer deeper insights into the factors influencing students' perceptions.
