@@ -2,7 +2,7 @@
 
 ## Problem Definition
 
-When I was in college, there were a suspicion from the professors and college administrators that studentes tend to avaluate badly public universities in comparisson to private universities. This would result in the university performing worst in some important indicators (like CPC - Preliminary Course Concept). In this project, I want to investigate if this is true, and if so, in what extent.
+During my time in college, there was a suspicion among professors and administrators that students tend to rate public universities more poorly compared to private institutions. This perception might affect important indicators, such as the CPC (Preliminary Course Concept). This project aims to investigate whether this suspicion holds true and, if so, to what extent it impacts these indicators.
 
 ## Data
 
@@ -29,7 +29,7 @@ The student questionnaire is a key component of the Enade exam and is designed t
 - **Perceived Skills and Competencies:** Self-assessment of skills and knowledge gained during the course.
 - **Future Plans:** Career aspirations, expectations for further education, and employment goals.
 
-The data collected through the student questionnaire provides insights into students' perspectives on their educational experience and helps evaluate the quality of higher education programs in Brazil. This information is used alongside Enade exam scores to assess the effectiveness of academic programs and inform educational policies. We are getting only a subset of this data, questions 27 to 68. These questions are about the **Course Experience**, and is the part that is taken into account when calculating the CPC. These questions are all positive affirmations and the student uses the likert scale (1 - strongly disagree to 6 - strongly agree) to mark his agreement. The numbers 7 and 8 are not an avaluation, they mean "Dont know how to answer" and "Does not apply" respectively . Bellow is a sample of the data
+We focus on a subset of this data — questions 27 to 68 — which pertain to Course Experience and are used in calculating the CPC. These questions consist of positive statements rated on a Likert scale from 1 (strongly disagree) to 6 (strongly agree). The numbers 7 and 8 are reserved for "Don't know how to answer" and "Does not apply," respectively. Below is a sample of the data:
 
 | NU_ANO | CO_CURSO | QE_I27 | QE_I28 | QE_I29 | QE_I30 | QE_I31 | QE_I32 | QE_I33 | QE_I34 | QE_I35 | QE_I36 | QE_I37 | QE_I38 | QE_I39 | QE_I40 | QE_I41 | QE_I42 | QE_I43 | QE_I44 | QE_I45 | QE_I46 | QE_I47 | QE_I48 | QE_I49 | QE_I50 | QE_I51 | QE_I52 | QE_I53 | QE_I54 | QE_I55 | QE_I56 | QE_I57 | QE_I58 | QE_I59 | QE_I60 | QE_I61 | QE_I62 | QE_I63 | QE_I64 | QE_I65 | QE_I66 | QE_I67 | QE_I68 |
 | ------ | -------- | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
@@ -40,36 +40,36 @@ The data collected through the student questionnaire provides insights into stud
 
 ## ETL and Data Modeling
 
-The ETL was made in Spark ([ETL Notebook](/src/ETL.ipynb)). The data started on S3, then went to Spark inside databricks and the tables were saved for analysis in databricks as well. From the 2 data sources, the database modeling was normalized and at the end resulted in 4 tables. Since the student questionnaire data was in the file per student, an important transformation was to group it by course and get only the mean. The other transformations were explained in the ETL file. Since the precision of the decimal number are known, the columns were modeled as DECIMAL instead of float, to avoid missrounding.
+The ETL was made in Spark ([ETL Notebook](/src/ETL.ipynb)). The data was initially stored on S3, then processed in Spark within Databricks, and finally saved as tables for analysis. The database was normalized from the two data sources, resulting in four tables. One key transformation involved aggregating the student questionnaire data by course to calculate the mean responses for each question, as explained in the ETL notebook. Additionally, to avoid rounding issues, the columns were modeled as DECIMAL instead of FLOAT.
 
 ![Database Diagram](/modeling/model.png)
 
 ### Curso Table
 
-This table in large but is quite simple, there is some course data, the enade grade and components (general knowledge, specific knowledge and final grade) and the mean of the student questionnaire for each question. The table in databricks is bellow
+This table is comprehensive, containing course data, Enade grades, components (general knowledge, specific knowledge, and final grade), and the average responses from the student questionnaire for each question.
 
 ![Course Table in Databricks](/img/curso_databricks.png)
 
 ### IES Table
 
-This table contains the institution data, it was splited from the courses table to avoid inconsistencies. The main column used is the categorie of the institution, Public or Private. 
+This table holds data about educational institutions, separated from the courses table to prevent inconsistencies. The primary focus is on the institution's category: Public or Private.
 
 ![IES Table in Databricks](/img/ies_databricks.png)
 
 
 ### Area Table
 
-This table is only the area code and its name. The area is the general area of the courses.
+This table includes the area code and its name, representing the general academic field of the courses.
 
 ![Area Table in Databricks](/img/area_databricks.png)
 
 ### City Table
 
-This table is only the city code and its name
+This table lists city codes and names.
 
 ![City Table in Databricks](/img/municipio_databricks.png)
 
 
 ## Analysis
 
-The full analysis and conclusion can be found the the [Analysis Notebook](/src/analysis.ipynb), but in summary, it was found that there is some truth to the suspicion of the professors.
+For a detailed analysis and conclusions, refer to the Analysis Notebook. In summary, the findings suggest that there is some validity to the professors' suspicions about students' evaluations of public versus private universities.
