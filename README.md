@@ -72,4 +72,4 @@ This table lists city codes and names.
 
 ## Analysis
 
-For a detailed analysis and conclusions, refer to the Analysis Notebook. In summary, the findings suggest that there is some validity to the professors' suspicions about students' evaluations of public versus private universities.
+For a detailed analysis and conclusions, refer to the [Analysis Notebook](/src/analysis.ipynb). In summary, the findings suggest that there is some validity to the professors' suspicions about students' evaluations of public versus private universities.
